@@ -63,7 +63,7 @@ const EmailScreen = (props) => {
                     />
                     <Button
                         Style={[styles.button, {marginTop: 10, width: vmin(90)}]}
-                        Press={() => props.navigation.navigate('Home')}
+                        Press={() => props.navigation.push('Home')}
                         Caption={'Назад'}
                         textStyle={styles.loginTextStyle}
                     />

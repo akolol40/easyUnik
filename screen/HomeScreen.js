@@ -47,7 +47,7 @@ const HomeScreen = (props) => {
   }
  }
  const Autorization = async () => {
-  const url = 'http://easyunik.ru/api/v1/'
+  const url = 'http://localhost:8888/api/v1/'
   try
   {
     let response = await fetch(url+'login', {
