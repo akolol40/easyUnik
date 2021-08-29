@@ -64,7 +64,7 @@ const VerifCode = (props) => {
         let Email = await getEmail()
         let code = await getCode()
         if (Number.parseInt(email) === Number.parseInt(code) ) {
-            props.navigation.navigate("RegData")
+            props.navigation.push("RegData")
         } else seterrorcode('Неверный код!')
     }
     return (

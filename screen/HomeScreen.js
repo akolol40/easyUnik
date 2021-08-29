@@ -69,7 +69,7 @@ const HomeScreen = (props) => {
       await AsyncStorage.setItem('@token', result.token)
       await AsyncStorage.setItem('@id', result.id)
       await AsyncStorage.setItem('@inAuth', JSON.stringify(true))
-      props.navigation.navigate("Profile")
+      props.navigation.push("Profile")
     }
   } catch(error) {
       console.log('Error:', error)
@@ -131,7 +131,7 @@ const HomeScreen = (props) => {
             </TouchableOpacity>
             <Text
               onPress={() => {
-                props.navigation.navigate("Email")
+                props.navigation.push("Email")
               }}
               style={styles.textStyleReg}>
               Зарегистрироваться

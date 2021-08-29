@@ -30,7 +30,7 @@ const EmailScreen = (props) => {
           } else if (response.ok) {
           await AsyncStorage.setItem('@email', JSON.stringify(email.toLowerCase()))
           await AsyncStorage.setItem('@code', JSON.stringify(code))
-          props.navigation.navigate("VerifCode")
+          props.navigation.push("VerifCode")
         }
         } catch(error) {
             console.log('Error:', error)

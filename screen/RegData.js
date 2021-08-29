@@ -50,7 +50,7 @@ const RegData = (props) => {
               method: "POST",
               body: JSON.stringify({email: JSON.parse(app.email), name: name, surname: surname, faculty: valueFac, Unic: value, Napr: valueSpec})
           })  
-          props.navigation.navigate("ConfimPass")
+          props.navigation.push("ConfimPass")
         } catch(error) {
             console.log('Error:', error)
         }

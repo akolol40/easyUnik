@@ -52,7 +52,7 @@ const ConfimPass = (props) => {
                 await AsyncStorage.setItem('@token', result.token)
                 await AsyncStorage.setItem('@id', result.id)
                 await AsyncStorage.setItem('@inAuth', JSON.stringify(true))
-                props.navigation.navigate("Profile")
+                props.navigation.push("Profile")
               }
             } catch (error) {
                 console.log('Error:', error)
